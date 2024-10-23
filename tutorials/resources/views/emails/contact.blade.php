@@ -1,6 +1,15 @@
-<!-- resources/views/emails/contact.blade.php -->
-<h1>Nouveau message de contact</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form Submission</title>
+</head>
+<body>
+    <h2>Vous avez reçu un nouveau message de contact</h2>
 
-<p>Nom : {{ $name }}</p>
-<p>Email : {{ $email }}</p>
-<p>Message : {{ $message }}</p>
+    <p><strong>Nom :</strong> {{ $name }}</p>
+    <p><strong>Email :</strong> {{ $email }}</p>
+    <p><strong>Email :</strong> {{ $msg }}</p>
+
+   
+</body>
+</html>
