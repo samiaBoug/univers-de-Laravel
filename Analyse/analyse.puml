@@ -1,0 +1,16 @@
+@startuml
+
+left to right direction
+actor "Client" as fc
+rectangle "Real Estate Client Use Cases" {
+  usecase "Send Messages to Realtor" as UC1
+  usecase "Rent Property" as UC2
+  usecase "Buy Property" as UC3
+}
+
+fc -- UC1 : "Initiates"
+fc -- UC2 : "Initiates"
+fc -- UC3 : "Initiates"
+
+@enduml
+
