@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="contact-right">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form action="{{ url('/contact')}}" method="post" class="signin-form">
             <div class="input-grids">
 
               <input type="text" name="name" id="w3lName" placeholder="Your Name*" class="contact-input"
