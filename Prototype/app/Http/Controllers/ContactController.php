@@ -14,13 +14,13 @@ class ContactController extends Controller
     public function store(request $request){
         //valider les données 
         $data = $request ->validate([
-            "name" => 'required' ,
+            "name" => 'required|string' ,
             "email" => 'required|email',
-            "msg" => 'required' ,
+            "msg" => 'required' 
         ]);
 
         //envoi de l'email
-        Mail::send('emails.contact', $data, function ($message) use ($data) {
+        Mail::send('emails.contact', $data, function ($message) {
             $message->to('bougtoub.samia.solicode@gmail.com')
                     ->subject('Nouveau message de contact');
         });

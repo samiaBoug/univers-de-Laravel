@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 
   <section class="w3l-content-4 py-5" id="ab">
     <div class="content-4-main py-lg-5 py-md-4">
@@ -183,6 +185,6 @@
         </div>
       </div>
   </section>
-
+@endsection 
 
  
