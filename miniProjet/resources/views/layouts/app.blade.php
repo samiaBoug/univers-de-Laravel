@@ -90,6 +90,7 @@
     </header>
     <!-- //header -->
   </div>
+  
     @yield('content')
 
     <!-- move top -->

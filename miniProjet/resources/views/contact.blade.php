@@ -1,4 +1,7 @@
  <!-- /contact-section -->
+ @extends('layouts.app')
+
+ @section('content')
 
  <section class="w3l-contact-2 py-5" id="contact">
     <div class="container py-lg-5 py-md-4 py-2">
@@ -65,5 +68,7 @@
       </div>
     </div>
   </section>
+  
+  @endsection
 
   
