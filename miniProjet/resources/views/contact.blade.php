@@ -3,6 +3,9 @@
  <section class="w3l-contact-2 py-5" id="contact">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="title-content text-center">
+      @if(session('success'))
+        <p class="alert alert-success" role="alert">{{ session('success') }}</p>
+        @endif
         <h6 class="title-subhny text-center">Contact Us</h6>
         <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center">Send a Message</h3>
       </div>
