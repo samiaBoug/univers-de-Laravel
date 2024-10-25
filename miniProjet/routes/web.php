@@ -7,6 +7,10 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 
 
+Route::get('/', function(){
+    return view('home') ;
+});
+
 
 Route::get('/about', [AboutController::class, 'about']);
 
